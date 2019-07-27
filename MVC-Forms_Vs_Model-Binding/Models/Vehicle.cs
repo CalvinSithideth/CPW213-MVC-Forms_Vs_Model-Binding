@@ -9,27 +9,13 @@ namespace MVC_Forms_Vs_Model_Binding.Models
     {
         public int VehicleID { get; set; }
 
-        public int NumWheels { get; set; }
-
-        public string DriveTrain { get; set; }
-
-        public string Transmission { get; set; }
-
         public string Brand { get; set; }
 
-        public string BrandCountry { get; set; }
+        public string ModelName { get; set; }
 
         public int Year { get; set; }
 
         public int TotalMileage { get; set; }
-
-        public bool IsNew { get; set; }
-
-        public string ModelName { get; set; }
-
-        public int CityMPG { get; set; }
-
-        public int HwyMPG { get; set; }
 
         public decimal Price { get; set; }
     }
