@@ -1,0 +1,42 @@
+﻿@model Vehicle
+@{
+    ViewData["Title"] = "New Vehicle Model-Binding";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>NewMB</h1>
+
+@if (ViewData["Success"] != null)
+{
+    <h2>@ViewData["Success"]</h2>
+}
+
+    <form method="post">
+        <label asp-for="Brand"></label>
+        <input asp-for="Brand" />
+        <span asp-validation-for="Brand"></span>
+        <br />
+
+        <label asp-for="ModelName"></label>
+        <input asp-for="ModelName" />
+        <span asp-validation-for="ModelName"></span>
+        <br />
+
+        <label asp-for="Year"></label>
+        <input asp-for="Year" />
+        <span asp-validation-for="Year"></span>
+        <br />
+
+        <label asp-for="TotalMileage"></label>
+        <input asp-for="TotalMileage" />
+        <span asp-validation-for="TotalMileage"></span>
+        <br />
+
+        <label asp-for="Price"></label>
+        <input asp-for="Price" />
+        <span asp-validation-for="Price"></span>
+        <br />
+
+        <input type="submit" value="Submit with Model-Binding" />
+
+    </form>
